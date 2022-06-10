@@ -1,14 +1,14 @@
-import { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { useState } from "react"
+import logo from "./logo.svg"
+import "./App.css"
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   function callWeather() {
     fetch("/api/weather/forecast")
       .then((res) => res.json())
-      .then((res) => console.log(res));
+      .then((res) => console.log(res))
   }
 
   return (
@@ -45,7 +45,7 @@ function App() {
         </p>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
